@@ -38,3 +38,6 @@ if (yourAge < 18) {
 } else {
     finalPrice = potentialPrice
 }
+
+// Stampo in console il prezzo finale
+console.log(`In base ai ${kilometers}km che hai percorso e alla tua età ${yourAge} anni, il costo del biglietto è ${finalPrice.toFixed(2)}`)
