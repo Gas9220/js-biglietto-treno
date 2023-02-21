@@ -1,0 +1,19 @@
+.logo {
+    width: 2rem;
+}
+
+nav {
+    background-color: brown;
+    height: 4.375rem;
+}
+
+main {
+    height: calc(100vh - 4.375rem);
+    background-image: url('https://mars.nasa.gov/system/content_pages/main_images/256_Webp.net-resizeimage_%284%29.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.price-card {
+    background-color: brown;
+}
