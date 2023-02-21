@@ -20,3 +20,21 @@ if (yourAge < 0 || yourAge > 100) {
 
 // 3. Calcolo il potenziale prezzo del biglietto, numero di chilometri * 0,21€ ( costo al km).
 const potentialPrice =  kilometers * 0.21
+
+// 4. Calcolo il prezzo finale (formattato con massimo 2 decimali) il base alle regole stabilite
+
+let finalPrice = 0
+
+//  - Se eta inserita < 18 applico sconto del 20% con la seguente formula: prezzo finale = (prezzo potenziale * 20) / 100
+//  - Se eta inserita > 65 applico sconto del 40% con la seguente formula: prezzo finale = (prezzo potenziale * 40) / 100
+//  - Altrimenti il prezzo finale sarà uguale al prezzo potenziale
+
+if (yourAge < 18) {
+    const discountAmount = (potentialPrice * 20) / 100
+    finalPrice = potentialPrice - discountAmount
+} else if (yourAge > 65) {
+    const discountAmount = (potentialPrice * 40) / 100
+    finalPrice = potentialPrice - discountAmount
+} else {
+    finalPrice = potentialPrice
+}
