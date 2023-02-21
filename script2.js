@@ -43,10 +43,10 @@ function calculateDiscount(age) {
 
     if (age < 18) {
         discount = (potentialPrice * youngDiscount) / 100
-        message = `Hai ricevuto ${discount.toFixed(2)}€ perchè sei minore di 18 anni`
+        message = `Hai ricevuto ${discount.toFixed(2)}€ di sconto perchè sei minore di 18 anni`
     } else if (age > 65) {
         discount = (potentialPrice * seniorDiscount) / 100
-        message = `Hai ricevuto ${discount.toFixed(2)}€ perchè sei maggiore di 65 anni`
+        message = `Hai ricevuto ${discount.toFixed(2)}€ di sconto perchè sei maggiore di 65 anni`
     } else {
         discount = 0
         message = `Non hai ricevuto alcuno sconto`
