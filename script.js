@@ -17,3 +17,6 @@ if (yourAge < 0 || yourAge > 100) {
     yourAge = Number(prompt('Quanti anni hai?'))
 }
 
+
+// 3. Calcolo il potenziale prezzo del biglietto, numero di chilometri * 0,21€ ( costo al km).
+const potentialPrice =  kilometers * 0.21
